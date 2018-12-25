@@ -1,8 +1,7 @@
 {
   "name": "igbes-hexletproject-1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "консольная игра brain-games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -16,8 +15,8 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["brain-games"],
+  "author": "igbes",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
