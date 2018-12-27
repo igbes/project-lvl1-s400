@@ -1,6 +1,6 @@
 {
   "name": "igbes-hexletproject-1",
-  "version": "1.2.4",
+  "version": "1.2.22",
   "description": "консольная игра brain-games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
