@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import even from '../even';
+import getEven from '../engine';
 
-even();
+getEven();
