@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
-import { randomInteger } from '../utils';
+import { randomInteger, askName } from '../utils';
+import engine from '../game-engine';
 
-export const greeting = () => {
+const greeting = () => {
   console.log('Welcome to the Brain Games!');
   console.log('What number is missing in the progression?');
 };
@@ -16,7 +17,7 @@ const arr = () => {
   return iter([], firstElement);
 };
 
-export const progression = () => {
+const progression = () => {
   const newArr = arr();
   const emptyElement = randomInteger(1, 10);
   const rightAnswer = String(newArr[emptyElement]);
@@ -26,3 +27,5 @@ export const progression = () => {
   const answer = readlineSync.question('Your answer: ');
   return [rightAnswer, answer];
 };
+
+export default() => engine(greeting, askName, progression);

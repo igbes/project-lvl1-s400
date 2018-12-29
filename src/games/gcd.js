@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
-import { randomInteger } from '../utils';
+import { randomInteger, askName } from '../utils';
+import engine from '../game-engine';
 
 const alg = (a, b) => {
   if (b === 0) return a;
@@ -7,12 +8,12 @@ const alg = (a, b) => {
   return String(res);
 };
 
-export const greeting = () => {
+const greeting = () => {
   console.log('Welcome to the Brain Games!');
   console.log('Find the greatest common divisor of given numbers.');
 };
 
-export const gcd = () => {
+const gcd = () => {
   const elemOne = randomInteger();
   const elemTwo = randomInteger();
   const rightAnswer = alg(elemOne, elemTwo);
@@ -21,3 +22,5 @@ export const gcd = () => {
   const answer = readlineSync.question('Your answer: ');
   return [rightAnswer, answer];
 };
+
+export default () => engine(greeting, askName, gcd);

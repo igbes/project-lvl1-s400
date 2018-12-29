@@ -1,7 +1,7 @@
 
 const numSteps = 3;
 
-const engine = (greeting, askName, calc) => {
+const engine = (greeting, askName, answers) => {
   greeting();
   const userName = askName();
   const iter = (count) => {
@@ -9,7 +9,7 @@ const engine = (greeting, askName, calc) => {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const [rightAnswer, answer] = calc();
+    const [rightAnswer, answer] = answers();
     if (answer === rightAnswer) {
       console.log('Correct!');
       iter(count - 1);
