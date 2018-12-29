@@ -1,10 +1,11 @@
 {
   "name": "igbes-hexletproject-1",
-  "version": "1.2.30",
+  "version": "1.2.32",
   "description": "консольная игра brain-games",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-even.js"
   },
   "engines": {
     "node": ">=8"
