@@ -1,8 +1,9 @@
 
 const numSteps = 3;
 
-const engine = (greeting, calc) => {
-  const userName = greeting();
+const engine = (greeting, askName, calc) => {
+  greeting();
+  const userName = askName();
   const iter = (count) => {
     if (count === 0) {
       console.log(`Congratulations, ${userName}!`);

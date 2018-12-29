@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { askName } from '../utils';
-import { greeting, even } from '../games/even';
+import { greeting, gcd } from '../games/gcd';
 import engine from '../game-engine';
 
-engine(greeting, askName, even);
+engine(greeting, askName, gcd);
