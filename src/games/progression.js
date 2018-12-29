@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+
 import { randomInteger, askName } from '../utils';
 import engine from '../game-engine';
 
@@ -23,9 +23,7 @@ const progression = () => {
   const rightAnswer = String(newArr[emptyElement]);
   newArr[emptyElement] = '..';
   const question = newArr.join(' ');
-  console.log('question: ', question);
-  const answer = readlineSync.question('Your answer: ');
-  return [rightAnswer, answer];
+  return [rightAnswer, question];
 };
 
 export default() => engine(greeting, askName, progression);

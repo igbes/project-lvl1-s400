@@ -1,10 +1,10 @@
-import readlineSync from 'readline-sync';
+
 import { randomInteger, askName } from '../utils';
 import engine from '../game-engine';
 
-const alg = (a, b) => {
+const algoritmEvklid = (a, b) => {
   if (b === 0) return a;
-  const res = alg(b, a % b);
+  const res = algoritmEvklid(b, a % b);
   return String(res);
 };
 
@@ -16,11 +16,9 @@ const greeting = () => {
 const gcd = () => {
   const elemOne = randomInteger();
   const elemTwo = randomInteger();
-  const rightAnswer = alg(elemOne, elemTwo);
+  const rightAnswer = algoritmEvklid(elemOne, elemTwo);
   const question = (`${elemOne} ${elemTwo}`);
-  console.log('question: ', question);
-  const answer = readlineSync.question('Your answer: ');
-  return [rightAnswer, answer];
+  return [rightAnswer, question];
 };
 
-export default () => engine(greeting, askName, gcd);
+export default() => engine(greeting, askName, gcd);

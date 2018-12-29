@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+
 import { randomInteger, askName } from '../utils';
 import engine from '../game-engine';
 
@@ -13,9 +13,7 @@ const even = () => {
   const yesOrNo = n => (isEven(n) ? 'yes' : 'no');
   const question = randomInteger();
   const rightAnswer = yesOrNo(question);
-  console.log('question: ', question);
-  const answer = readlineSync.question('Your answer: ');
-  return [rightAnswer, answer];
+  return [rightAnswer, question];
 };
 
 export default() => engine(greeting, askName, even);
