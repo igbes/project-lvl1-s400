@@ -23,7 +23,7 @@ const calc = () => {
   const elemOne = randomInteger(1, 10);
   const elemTwo = randomInteger(1, 10);
   const typeOretation = listMathOperation[randomInteger(0, listMathOperation.length - 1)];
-  const rightAnswer = resultOperatrion(typeOretation, elemOne, elemTwo);
+  const rightAnswer = String(resultOperatrion(typeOretation, elemOne, elemTwo));
   const question = (`${elemOne} ${typeOretation} ${elemTwo}`);
   return [rightAnswer, question];
 };

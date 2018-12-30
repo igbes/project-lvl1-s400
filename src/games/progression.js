@@ -17,7 +17,7 @@ const arr = () => {
 
 const progression = () => {
   const newArr = arr();
-  const hiddenElementPosition = randomInteger(1, 10);
+  const hiddenElementPosition = randomInteger(0, 9);
   const rightAnswer = String(newArr[hiddenElementPosition]);
   newArr[hiddenElementPosition] = '..';
   const question = newArr.join(' ');

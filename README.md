@@ -11,5 +11,11 @@ https://asciinema.org/a/0QigC1NhufVsxiaiDGSzimJfd
 https://asciinema.org/a/Ef24BdN4TzW8oyR8v504MYmWn
 
 ``` brain-calc ```
+https://asciinema.org/a/xU540lksu4l7nE5hCbyU791HG
 
+``` brain-progression ```
+https://asciinema.org/a/gOqIDDU03hnWx9Ux7M5j739hY
+
+``` brain-gcd ```
+https://asciinema.org/a/Kmf5tt1iYZhjnMzc7Juzuoppk
 
