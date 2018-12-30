@@ -19,3 +19,6 @@ https://asciinema.org/a/gOqIDDU03hnWx9Ux7M5j739hY
 ``` brain-gcd ```
 https://asciinema.org/a/Kmf5tt1iYZhjnMzc7Juzuoppk
 
+``` brain-prime ```
+https://asciinema.org/a/F6lyEcp3OJHy5moUwVgntajuX
+

@@ -20,6 +20,7 @@ const engine = (task, calcParametrs) => {
       iter(count - 1);
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
     }
   };
   iter(numSteps);
