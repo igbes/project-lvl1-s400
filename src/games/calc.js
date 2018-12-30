@@ -1,19 +1,30 @@
 
-import { randomInteger, askName } from '../utils';
+import { randomInteger } from '../utils';
 import engine from '../game-engine';
 
 const listMathOperation = ['+', '-', '*'];
 
 const resultOperatrion = (typeOretation, valOne, valTwo) => {
+  switch (typeOretation) {
+    case '+':
+      return valOne + valTwo;
+    case '-':
+      return valOne - valTwo;
+    case '*':
+      return valOne * valTwo;
+    default:
+      return 'fail';
+  }
+};
+
+/*
+const resultOperatrion = (typeOretation, valOne, valTwo) => {
   if (typeOretation === '+') return String(valOne + valTwo);
   if (typeOretation === '-') return String(valOne - valTwo);
   return String(valOne * valTwo);
 };
-
-const greeting = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('What is the result of the expression?');
-};
+*/
+const task = () => 'What is the result of the expression?';
 
 const calc = () => {
   const elemOne = randomInteger(1, 10);
@@ -24,4 +35,4 @@ const calc = () => {
   return [rightAnswer, question];
 };
 
-export default() => engine(greeting, askName, calc);
+export default() => engine(task, calc);

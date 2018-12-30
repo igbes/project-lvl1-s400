@@ -1,9 +1,11 @@
 import readlineSync from 'readline-sync';
+import { askName } from './utils';
 
 const numSteps = 3;
 
-const engine = (greeting, askName, calcParametrs) => {
-  greeting();
+const engine = (task, calcParametrs) => {
+  console.log('Welcome to the Brain Games!');
+  task();
   const userName = askName();
   const iter = (count) => {
     if (count === 0) {
@@ -20,6 +22,6 @@ const engine = (greeting, askName, calcParametrs) => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
     }
   };
-  return iter(numSteps);
+  iter(numSteps);
 };
 export default engine;
