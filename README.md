@@ -5,6 +5,11 @@
 [![Build Status](https://travis-ci.org/igbes/project-lvl1-s400.svg?branch=master)](https://travis-ci.org/igbes/project-lvl1-s400)
 
 ``` install: ```
+https://asciinema.org/a/0QigC1NhufVsxiaiDGSzimJfd
 
-https://asciinema.org/a/vRqrcSwS8pDcsTCfaRndquuNP
+``` brain-even ```
+https://asciinema.org/a/Ef24BdN4TzW8oyR8v504MYmWn
+
+``` brain-calc ```
+
 
