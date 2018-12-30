@@ -6,5 +6,5 @@
 
 ``` install: ```
 
-https://asciinema.org/connect/c35106f8-83a4-4876-b3bb-f906c5ba30ca>
+https://asciinema.org/a/vRqrcSwS8pDcsTCfaRndquuNP
 
