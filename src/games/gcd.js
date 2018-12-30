@@ -7,7 +7,7 @@ const algoritmEvklid = (a, b) => {
   return algoritmEvklid(b, a % b);
 };
 
-const task = () => 'Find the greatest common divisor of given numbers.';
+const task = 'Find the greatest common divisor of given numbers.';
 
 const gcd = () => {
   const elemOne = randomInteger();

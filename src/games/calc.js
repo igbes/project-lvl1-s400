@@ -17,14 +17,7 @@ const resultOperatrion = (typeOretation, valOne, valTwo) => {
   }
 };
 
-/*
-const resultOperatrion = (typeOretation, valOne, valTwo) => {
-  if (typeOretation === '+') return String(valOne + valTwo);
-  if (typeOretation === '-') return String(valOne - valTwo);
-  return String(valOne * valTwo);
-};
-*/
-const task = () => 'What is the result of the expression?';
+const task = 'What is the result of the expression?';
 
 const calc = () => {
   const elemOne = randomInteger(1, 10);

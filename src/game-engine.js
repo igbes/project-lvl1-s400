@@ -5,7 +5,7 @@ const numSteps = 3;
 
 const engine = (task, calcParametrs) => {
   console.log('Welcome to the Brain Games!');
-  task();
+  console.log(task);
   const userName = askName();
   const iter = (count) => {
     if (count === 0) {

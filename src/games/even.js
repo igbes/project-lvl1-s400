@@ -4,7 +4,7 @@ import engine from '../game-engine';
 
 const isEven = num => num % 2 === 0;
 
-const task = () => 'Answer "yes" if number even otherwise answer "no".';
+const task = 'Answer "yes" if number even otherwise answer "no".';
 
 const even = () => {
   const yesOrNo = n => (isEven(n) ? 'yes' : 'no');

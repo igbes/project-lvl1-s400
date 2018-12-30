@@ -2,7 +2,7 @@
 import { randomInteger } from '../utils';
 import engine from '../game-engine';
 
-const task = () => 'What number is missing in the progression?';
+const task = 'What number is missing in the progression?';
 
 const arr = () => {
   const lengthProgression = 10;
