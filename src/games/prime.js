@@ -12,7 +12,8 @@ const isPrime = (number) => {
   return iter(number - 1);
 };
 
-const yesOrNo = n => (isPrime(n) ? 'yes' : 'no');
+const yesOrNo = num => (isPrime(num) ? 'yes' : 'no');
+
 const prime = () => {
   const randomNumber = randomInteger(1, 100);
   const rightAnswer = String(yesOrNo(randomNumber));
