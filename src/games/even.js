@@ -1,5 +1,5 @@
 
-import { randomInteger } from '../utils';
+import randomInteger from '../utils';
 import engine from '../game-engine';
 
 const isEven = num => num % 2 === 0;
