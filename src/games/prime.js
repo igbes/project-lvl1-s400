@@ -7,8 +7,7 @@ const isPrime = (number) => {
   if (number < 2) return false;
   const lastElem = Math.floor(Math.sqrt(number));
   const iter = (num) => {
-    if (num === lastElem + 1 && lastElem > 2 ) return true;
-    if (num === number) return true;
+    if ((num === lastElem + 1 && lastElem > 2) || (num === number)) return true;
     if (number % num === 0) return false;
     return iter(num + 1);
   };
