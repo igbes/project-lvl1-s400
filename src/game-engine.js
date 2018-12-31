@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-// import { askName } from './utils';
 
 const askName = () => {
   const userName = readlineSync.question('May I have your name?: ');

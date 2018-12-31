@@ -16,7 +16,7 @@ const isPrime = (number) => {
 const yesOrNo = num => (isPrime(num) ? 'yes' : 'no');
 
 const prime = () => {
-  const randomNumber = randomInteger(1, 100);
+  const randomNumber = randomInteger(-10, 100);
   const rightAnswer = yesOrNo(randomNumber);
   const question = (`${randomNumber}`);
   return [rightAnswer, question];
